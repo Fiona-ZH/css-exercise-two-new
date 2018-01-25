@@ -1,13 +1,28 @@
 body {
-  background-color: #ff0000;
-  color: #0000FF;
+  background-color: #EAEAEA;
+  color: #383838;
+  font-size: 16px; /*Added so that all fonts can be edited from this same location*/
+  font-family: sans-serif;
 }
 
 nav {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,1);
   float: left;
   position: fixed;
   width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:link, a:visited {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #49ABE8;
+  text-decoration: underline;
 }
 
 .logo {
@@ -21,6 +36,15 @@ nav {
 
 .medium-pic {
   width: 70%;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  padding-top: 5px;
+  font-size: 0.8em;
 }
 
 .left, .right {
@@ -48,5 +72,37 @@ article {
 
 .container {
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
+}
+
+.story-text {
+  padding-top: 20px;
+  line-height: 1.5em;
+}
+
+.story-text p{
+  padding: 5px 0px;
+}
+
+h1 {
+  padding-top: 30px;
+  font-size: 3em;
+  font-family: serif;
+  font-weight: bold;
+  line-height: normal;
+}
+
+h3 {
+  padding-top: 20px;
+  font-size: 1.3em;
+  font-family: serif;
+  line-height: 1.4em;
+}
+
+.author {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: serif;
 }
